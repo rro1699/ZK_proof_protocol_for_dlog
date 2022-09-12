@@ -1,8 +1,8 @@
 package center
 
 import (
-	vC "awesomeProject/Verificator"
 	pC "awesomeProject/prover"
+	vC "awesomeProject/verificator"
 	"crypto/rand"
 	"math/big"
 )
@@ -58,7 +58,7 @@ func StartAlgoritm(bitSize int) bool {
 
 	vC.SetOpenData(p, q, g, y)
 
-	R := pC.Step1() // prover generate R and send him to Verificator
+	R := pC.Step1() // prover generate R and send him to verificator
 	vC.Step1(R)
 
 	r := vC.Step2()

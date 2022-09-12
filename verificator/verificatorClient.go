@@ -1,4 +1,4 @@
-package Verificator
+package verificator
 
 import (
 	"crypto/rand"
